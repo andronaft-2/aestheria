@@ -3,15 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Aestheria: a daily moon ritual on your home screen</title>
-<meta name="description" content="Moon phases, a card of the day and quiet reflection in one calm daily ritual. Join the waitlist for early access.">
-<meta property="og:title" content="Aestheria: a daily moon ritual">
-<meta property="og:description" content="Moon phases, a card of the day and quiet reflection. Join the waitlist.">
+<title>Aestheria: Moon &amp; Tarot Ritual</title>
+<meta name="description" content="A daily moon ritual on your home screen: today's moon phase, a card of the day and a minute for yourself. No account, everything stays on your phone. Join the waitlist.">
+<link rel="canonical" href="https://andronaft-2.github.io/aestheria/">
+<meta name="theme-color" content="#100d16">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23100d16'/%3E%3Cpath d='M40 14a19 19 0 1 0 0 36 22 22 0 0 1 0-36z' fill='%23f3ead9'/%3E%3Ccircle cx='46' cy='20' r='2' fill='%23d9a273'/%3E%3C/svg%3E">
+<meta property="og:title" content="Aestheria: Moon &amp; Tarot Ritual">
+<meta property="og:description" content="Today's moon, a card of the day and a minute for yourself. Private by design. Join the waitlist.">
 <meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<meta property="og:url" content="https://andronaft-2.github.io/aestheria/">
+<meta property="og:image" content="https://andronaft-2.github.io/aestheria/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <style>
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-cyrillic-500-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-latin-500-italic.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-cyrillic-500-italic.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/cormorant-garamond-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/cormorant-garamond-cyrillic-600-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/manrope-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/manrope-cyrillic-400-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/manrope-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/manrope-cyrillic-500-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/manrope-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/manrope-cyrillic-600-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+
 :root{--ink:#100d16;--ink-2:#1a1522;--ink-3:#272031;--cream:#f3ead9;--muted:#b7aebd;--copper:#d9a273;--line:rgba(243,234,217,.16)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -52,7 +70,34 @@ h2{font-size:clamp(32px,4.5vw,44px);line-height:1.1;margin-bottom:30px}
 .join p{color:var(--muted);max-width:34em;margin:0 auto 26px}
 footer{border-top:1px solid var(--line);padding:30px 0 44px;color:var(--muted);font-size:14px}
 footer p{margin:0 0 8px}
-@media (max-width:760px){.hero{grid-template-columns:1fr;gap:42px;padding-top:22px}.grid{grid-template-columns:1fr;gap:26px}section{padding:44px 0}}
+.eyebrow{color:var(--copper);font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 14px}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.trio div{background:var(--ink-2);border:1px solid var(--line);border-radius:20px;padding:22px}
+.trio svg{width:28px;height:28px;color:var(--copper)}
+.trio h3{font:500 23px/1.2 "Cormorant Garamond",serif;margin:12px 0 6px}
+.trio p{margin:0;color:var(--muted);font-size:15px}
+.share{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.share figure{margin:0;text-align:center}
+.share figcaption{color:var(--muted);font-size:15px;margin:18px auto 0;max-width:22em}
+.lock{width:min(270px,100%);aspect-ratio:9/16.5;display:flex;flex-direction:column;margin:0 auto;border-radius:40px;border:1px solid var(--line);padding:42px 18px;background:radial-gradient(120% 80% at 50% 0%,#3a2d4a 0%,#1a1522 55%,#100d16 100%);box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.lock .date{font-size:14px;color:var(--cream);opacity:.85}
+.lock .time{font:600 64px/1 Manrope,sans-serif;letter-spacing:-.02em;margin:4px 0 20px}
+.widgets{display:flex;gap:10px;justify-content:center}
+.w-moon{width:64px;height:64px;border-radius:50%;background:rgba(243,234,217,.12);display:grid;place-items:center}
+.w-moon svg{width:44px;height:44px}
+.w-card{flex:1;max-width:150px;border-radius:20px;background:rgba(243,234,217,.12);padding:10px 12px;text-align:left;font-size:12px;line-height:1.3}
+.w-card b{display:block;font:500 17px/1.15 "Cormorant Garamond",serif}
+.notif{margin-top:auto;display:flex;gap:10px;align-items:center;text-align:left;background:rgba(243,234,217,.12);border-radius:18px;padding:10px 12px;font-size:12px;line-height:1.35}
+.notif i{flex:none;width:28px;height:28px;border-radius:8px;background:#100d16;display:grid;place-items:center}
+.notif i svg{width:18px;height:18px}
+.notif b{display:block;font-weight:600}
+.story{width:min(250px,100%);aspect-ratio:9/16;margin:0 auto;border-radius:24px;border:1px solid var(--line);padding:26px 22px 18px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;background:radial-gradient(90% 60% at 50% 30%,#2e2440 0%,#140f1c 70%);box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.story .s-phase{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.story svg.s-card{width:110px;height:174px}
+.story .s-name{font:500 30px/1 "Cormorant Garamond",serif}
+.story .s-q{font:italic 500 18px/1.3 "Cormorant Garamond",serif;color:var(--muted);text-align:center;margin:0}
+.story .s-mark{font:600 13px/1 "Cormorant Garamond",serif;letter-spacing:.12em;opacity:.7}
+@media (max-width:760px){.trio,.share{grid-template-columns:1fr}.hero{grid-template-columns:1fr;gap:42px;padding-top:22px}.grid{grid-template-columns:1fr;gap:26px}section{padding:44px 0}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -69,6 +114,7 @@ footer p{margin:0 0 8px}
 <main>
 <div class="hero">
 <div>
+<p class="eyebrow" data-i18n="eyebrow">Moon &amp; Tarot Ritual</p>
 <h1 data-i18n-html="h1">A quiet moon ritual, <em>every day.</em></h1>
 <p class="lede" data-i18n="lede">Today's moon, a card to reflect on and a moment for yourself, in one calm app and on your home screen.</p>
 <a class="cta" id="cta" href="#join" data-i18n="cta">Join the waitlist</a>
@@ -95,6 +141,43 @@ footer p{margin:0 0 8px}
 </div>
 </section>
 
+<section id="privacy">
+<h2 data-i18n="privTitle">Private by design</h2>
+<div class="trio">
+<div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/><path d="M3 3l18 18"/></svg><h3 data-i18n="p1t">No account</h3><p data-i18n="p1">Open it and begin. No sign-up, no email, no profile to fill in.</p></div>
+<div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10 18.5h4"/><path d="M12 8v4l2 1.5"/></svg><h3 data-i18n="p2t">Stays on your phone</h3><p data-i18n="p2">Your cards and evening notes are kept only on your device. Nothing to leak, nothing to sell.</p></div>
+<div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 8.5a15 15 0 0 1 20 0"/><path d="M5.5 12a10 10 0 0 1 13 0"/><path d="M9 15.5a5 5 0 0 1 6 0"/><circle cx="12" cy="19" r="1"/><path d="M3 3l18 18"/></svg><h3 data-i18n="p3t">Works offline</h3><p data-i18n="p3">Every reading is written in advance and lives inside the app. No servers, no AI guessing about you.</p></div>
+</div>
+</section>
+
+<section id="share">
+<h2 data-i18n="shareTitle">Made for your screen, and for sharing</h2>
+<div class="share">
+<figure>
+<div class="lock" aria-hidden="true">
+<div class="date" id="lock-date">&nbsp;</div>
+<div class="time">7:42</div>
+<div class="widgets">
+<div class="w-moon"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="#2b2436"/><path class="moon-lit" fill="#f3ead9" d=""/></svg></div>
+<div class="w-card"><span data-i18n="wCard">Card of the day</span><b data-i18n="starName">The Star</b></div>
+</div>
+<div class="notif"><i><svg viewBox="0 0 64 64"><path d="M40 14a19 19 0 1 0 0 36 22 22 0 0 1 0-36z" fill="#f3ead9"/></svg></i><div><b>Aestheria</b><span data-i18n="notif">A minute for your evening note?</span></div></div>
+</div>
+<figcaption data-i18n="lockCap">Today's moon and your card on the lock screen and home screen, at a glance.</figcaption>
+</figure>
+<figure>
+<div class="story" aria-hidden="true">
+<div class="s-phase" id="story-phase">&nbsp;</div>
+<svg class="s-card" viewBox="0 0 58 92"><rect x=".5" y=".5" width="57" height="91" rx="7" fill="#100d16" stroke="#d9a273"/><rect x="5" y="5" width="48" height="82" rx="4" fill="none" stroke="#d9a273" stroke-opacity=".5"/><path d="M29 22l3 9h9l-7 5 3 9-8-6-8 6 3-9-7-5h9z" fill="#f3ead9"/><g fill="#d9a273"><circle cx="16" cy="62" r="1.3"/><circle cx="42" cy="58" r="1.3"/><circle cx="23" cy="72" r="1.3"/><circle cx="36" cy="70" r="1.3"/><circle cx="29" cy="12" r="1.3"/></g></svg>
+<div class="s-name" data-i18n="starName">The Star</div>
+<p class="s-q" data-i18n="starQ">What would you do today if you trusted the process?</p>
+<div class="s-mark">AESTHERIA</div>
+</div>
+<figcaption data-i18n="storyCap">Share your card of the day as a story, dark and quiet, with a small Aestheria mark.</figcaption>
+</figure>
+</div>
+</section>
+
 <section>
 <div class="note"><p data-i18n-html="note"><strong>Please read.</strong> Aestheria is for reflection and entertainment. It is not a medical app, does not diagnose or treat anything, and must not be used for contraception or health decisions. Tarot and moon phases do not predict your future or your health.</p></div>
 </section>
@@ -114,10 +197,25 @@ footer p{margin:0 0 8px}
 </div>
 
 <script>
+// Visit counter: GoatCounter is cookieless and keeps no personal data. Put your code here (e.g. "aestheria")
+// to switch it on; it also records ?utm_campaign=… so each TikTok video can get its own link. Empty = off.
+var GOATCOUNTER = "";
+if (GOATCOUNTER) {
+var gc = document.createElement('script');
+gc.async = true; gc.src = 'https://gc.zgo.at/count.js';
+gc.dataset.goatcounter = 'https://' + GOATCOUNTER + '.goatcounter.com/count';
+document.head.appendChild(gc);
+document.addEventListener('DOMContentLoaded', function(){
+var line = document.createElement('p');
+line.dataset.i18n = 'foot3';
+document.querySelector('footer').appendChild(line);
+});
+}
 // Waitlist form
 var FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScRvM_AHMGlCqJrYPQxgP-1PgSqsA7nENoYNwfiGUbcgbb4ug/viewform";
 var T = {
 uk: {
+eyebrow:'Місяць і таро: щоденний ритуал',
 h1:'Тихий місячний ритуал <em>щодня.</em>',
 lede:'Місяць сьогодні, карта для роздумів і хвилина для себе: в одному спокійному застосунку й на домашньому екрані.',
 cta:'Записатися в список очікування',
@@ -130,19 +228,29 @@ f1t:'Місячний календар',f1:'Фази, молодики й пов
 f2t:'Карта дня',f2:'Щоранку одна карта, тактильне перемішування й короткий роздум.',
 f3t:'Вечірня рефлексія',f3:'Хвилина, щоб занотувати настрій і день. Ваші нотатки належать вам.',
 f4t:'Віджети й картки для сторіс',f4:'Місяць на екрані блокування й темні елегантні картки, якими можна поділитися за бажанням.',
+privTitle:'Приватність за замовчуванням',
+p1t:'Без акаунта',p1:'Відкрили й почали. Без реєстрації, без email, без анкети.',
+p2t:'Лишається на телефоні',p2:'Ваші карти й вечірні нотатки зберігаються тільки на пристрої. Нема чому витікати й нема що продавати.',
+p3t:'Працює офлайн',p3:'Усі тлумачення написані заздалегідь і живуть у застосунку. Без серверів і без нейромережі, що вгадує щось про вас.',
+shareTitle:'Для вашого екрана й для сторіс',
+wCard:'Карта дня',notif:'Хвилинка для вечірнього запису?',starName:'Зірка',starQ:'Що б ви зробили сьогодні, якби довіряли процесу?',
+lockCap:'Місяць сьогодні й ваша карта на екрані блокування та головному екрані, з одного погляду.',
+storyCap:'Діліться картою дня в сторіс: темна, спокійна, з маленьким знаком Aestheria.',
 note:'<strong>Будь ласка, прочитайте.</strong> Aestheria створена для роздумів і розваги. Це не медичний застосунок: він нічого не діагностує й не лікує, і його не можна використовувати для контрацепції чи рішень про здоров’я. Таро й фази Місяця не передбачають ваше майбутнє чи здоров’я.',
 joinTitle:'Допоможіть її створити',
 joinText:'Запишіться в список очікування й розкажіть, чого вам хочеться. Тестувальниці й тестувальники від 18 років, які візьмуть участь у ранньому тесті, отримають безкоштовний Premium після запуску. Відгук чи оцінка не вимагаються.',
 joinBtn:'Записатися в список очікування',
 joinNote:'Одна коротка форма. Email використовуємо лише для новин про Aestheria, і ви можете будь-коли попросити його видалити.',
 foot1:'Створено незалежним розробником. Запитання чи прохання про видалення: contact@zhukovskyi.space',
-foot2:'Фазу Місяця тут обчислено приблизно.'
+foot2:'Фазу Місяця тут обчислено приблизно.',
+foot3:'Відвідування рахує GoatCounter: без cookies і без персональних даних.'
 }
 };
 var EN = {};
 document.querySelectorAll('[data-i18n]').forEach(function(e){EN[e.dataset.i18n]=e.textContent});
 document.querySelectorAll('[data-i18n-html]').forEach(function(e){EN[e.dataset.i18nHtml]=e.innerHTML});
 T.en = EN;
+EN.foot3 = 'Visits are counted with GoatCounter: no cookies and no personal data.';
 
 var PHASES = {
 en:['New moon','Waxing crescent','First quarter','Waxing gibbous','Full moon','Waning gibbous','Last quarter','Waning crescent'],
@@ -164,12 +272,20 @@ var waxing = f < .5;
 var outer = waxing ? 1 : 0;
 var d = 'M'+cx+' '+(cy-r)+' A'+r+' '+r+' 0 0 '+outer+' '+cx+' '+(cy+r)+' A'+rx.toFixed(2)+' '+r+' 0 0 '+(waxing ? (k>0?0:1) : (k>0?1:0))+' '+cx+' '+(cy-r)+'Z';
 document.getElementById('moon-lit').setAttribute('d', d);
+document.querySelectorAll('.moon-lit').forEach(function(e){e.setAttribute('d', d)});
 }
 function phaseIndex(f){return Math.floor(f * 8 + .5) % 8}
 function render(){
 var f = moonFraction(Date.now());
 drawMoon(f);
 document.getElementById('phase-name').textContent = PHASES[lang][phaseIndex(f)];
+document.getElementById('story-phase').textContent = PHASES[lang][phaseIndex(f)];
+// Weekday on its own: Ukrainian puts it in the accusative ("неділю") when joined to the date.
+try{
+var loc = lang==='uk' ? 'uk-UA' : 'en-GB', now = new Date();
+var wd = now.toLocaleDateString(loc,{weekday:'long'});
+document.getElementById('lock-date').textContent = wd.charAt(0).toUpperCase() + wd.slice(1) + ', ' + now.toLocaleDateString(loc,{day:'numeric',month:'long'});
+}catch(e){}
 }
 function setLang(l){
 lang = l;
